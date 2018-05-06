@@ -60,6 +60,4 @@ toolbar.pack(side = 'top', fill = 'x')
 exitButton = Button(toolbar, relief = 'flat', command = Quit)
 exitButton.pack(side = 'left', padx = '2', pady = '2')
 
-newButton = Button(toolbar)
-
 root.mainloop()
