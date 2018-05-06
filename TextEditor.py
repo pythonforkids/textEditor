@@ -52,6 +52,8 @@ FAQMenu.add_command(label = 'Documentation', command = FAQ)
 menubar.add_cascade(label="File", menu = fileMenu)
 menubar.add_cascade(label="Help", menu = FAQMenu)
 
+
+
 #Панель инструментов
 toolbar = Frame(root, bd = 1, relief = 'raised')
 toolbar.pack(side = 'top', fill = 'x')
