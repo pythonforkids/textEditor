@@ -1,4 +1,4 @@
-from tkinter import filedialog
+from PIL import Image, ImageTk
 from tkinter import *
 
 def Quit():
@@ -57,18 +57,18 @@ toolbar = Frame(root, bd = 1, relief = 'raised')
 toolbar.pack(side = 'top', fill = 'x')
 
 #eimg = PhotoImage(open('exit.png'))
-path = 'images\exit.png'
-exitIM = PhotoImage(path)
+path = Image.open('images/exit.png')
+exitIM = ImageTk.PhotoImage(path)
 exitButton = Button(toolbar, relief = 'flat', command = Quit, image = exitIM)
 exitButton.pack(side = 'left', padx = '2', pady = '2')
 
 path2 = 'images\exit.png'
-exitIM = PhotoImage(path2)
+boldIM = PhotoImage(path2)
 boldButton = Button(toolbar, relief = 'flat', image = boldIM)
 boldButton.pack(side = 'left', padx = '2', pady = '2')
 
 path3 = 'images\exit.png'
-exitIM = PhotoImage(path3)
+italIM = PhotoImage(path3)
 italButton = Button(toolbar, relief = 'flat', image = italIM)
 italButton.pack(side = 'left', padx = '2', pady = '2')
 
